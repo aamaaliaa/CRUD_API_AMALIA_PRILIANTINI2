@@ -36,6 +36,8 @@ interface StaffService {
     @FormUrlEncoded
     @POST("addStaff")
     fun addStaff(@Field("name") name: String,
+                 @Field("jekel") jekel: String,
+                 @Field("ps") ps: String,
                  @Field("hp") hp: String,
                  @Field("alamat") alamat: String): Call<ResultStatus>
     // Fungsi Get Data
@@ -48,8 +50,12 @@ interface StaffService {
     // Fungsi Update Data
     @FormUrlEncoded
     @POST("updateStaff")
-    fun updateStaff(@Field("id") id: String,
-                    @Field("name") name: String,
-                    @Field("hp") hp: String,
-                    @Field("alamat") alamat: String): Call<ResultStatus>
+    fun updateStaff(
+        @Field("name") name: String,
+        @Field("jekel") jekel: String,
+        @Field("ps") ps: String,
+        @Field("hp") hp: String,
+        @Field("alamat") alamat: String,
+        alamat1: String
+    ): Call<ResultStatus>
 }

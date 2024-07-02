@@ -7,6 +7,12 @@ data class DataItem(
     @field:SerializedName("staff_name")
     val staffName: String? = null,
 
+    @field:SerializedName("staff_jekel")
+    val staffJenkel: String? = null,
+
+    @field:SerializedName("staff_ps")
+    val staffPS: String? = null,
+
     @field:SerializedName("staff_id")
     val staffId: String? = null,
 

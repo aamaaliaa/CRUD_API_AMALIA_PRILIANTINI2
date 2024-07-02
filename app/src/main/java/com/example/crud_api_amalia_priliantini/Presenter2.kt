@@ -5,9 +5,9 @@ import retrofit2.Response
 
 class Presenter2(private val crudView: UpdateAddActivity) {
     // Add data
-    fun addData(name: String, hp: String, alamat: String) {
+    fun addData(name: String, jekel: String, ps : String, hp: String, alamat: String) {
         NetworkConfig.getService()
-            ?.addStaff(name, hp, alamat)
+            ?.addStaff(name, jekel, ps , hp, alamat)
             ?.enqueue(object : retrofit2.Callback<ResultStatus> {
                 override fun onFailure(call: Call<ResultStatus>, t: Throwable) {
                     t.localizedMessage?.let { crudView.errorAdd(it) }
@@ -24,9 +24,9 @@ class Presenter2(private val crudView: UpdateAddActivity) {
     }
 
     // Update Data
-    fun updateData(id: String, name: String, hp: String, alamat: String) {
+    fun updateData(id: String, name: String,jekel: String, ps: String, hp: String, alamat: String) {
         NetworkConfig.getService()
-            ?.updateStaff(id, name, hp, alamat)
+            ?.updateStaff(id, name, jekel, ps, hp, alamat)
             ?.enqueue(object : retrofit2.Callback<ResultStatus> {
                 override fun onFailure(call: Call<ResultStatus>, t: Throwable) {
                     t.localizedMessage?.let { crudView.onErrorUpdate(it) }
