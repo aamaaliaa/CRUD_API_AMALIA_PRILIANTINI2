@@ -14,7 +14,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:hint="Name"
+        android:hint="Nama"
+        android:minHeight="48dp"
+        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/etJenkel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Jenis Kelamin"
+        android:minHeight="48dp"
+        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/etPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Program Studi"
         android:minHeight="48dp"
         tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize"
         android:autofillHints="" />
@@ -26,7 +46,6 @@
         android:layout_marginBottom="10dp"
         android:hint="Phone"
         android:minHeight="48dp"
-        android:textColorHint="#546E7A"
         tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize"
         android:autofillHints="" />
 

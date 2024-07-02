@@ -23,5 +23,5 @@
         android:background="@android:color/holo_green_dark"
         android:text="Tambah"
         android:textColor="#212121"
-        tools:ignore="VisualLintButtonSize" />
+        tools:ignore="VisualLintButtonSize,TextSizeCheck" />
 </RelativeLayout>
